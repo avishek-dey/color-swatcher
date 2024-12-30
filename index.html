@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Swatch Generator</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+  <header>
+    <h1>Color Swatch Generator</h1>
+    <p>Paste your color codes below, separated by spaces or new lines:</p>
+  </header>
+  <main class="container">
+    <textarea id="colorInput" class="p-6" placeholder="Paste color codes here..."></textarea>
+    <button id="generateButton" class="px-6 py-4 bg-green-700 rounded-2xl text-white">Generate Swatches</button>
+    <div id="swatchContainer" class="grid grid-cols-10 w-full  lg-w-full"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
