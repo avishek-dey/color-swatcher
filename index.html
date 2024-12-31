@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="app.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Color Swatch Viewer</title>
+</head>
+<body class="min-h-screen bg-gray-100 flex flex-col items-center p-6">
+  <h1 class="text-2xl font-bold mb-4">Color Swatch Viewer</h1>
+  <textarea
+    id="hexInput"
+    rows="4"
+    placeholder="Enter hex codes separated by spaces (e.g., 009fd3 66bde2 c0e6f0)"
+    class="w-full max-w-md p-2 border border-gray-300 rounded mb-4"
+  ></textarea>
+  <button
+    id="showColorsButton"
+    class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+  >
+    Show Colors
+  </button>
+  <div id="colorDisplay" class="mt-6 grid grid-cols-10"></div>
+</body>
+</html>
